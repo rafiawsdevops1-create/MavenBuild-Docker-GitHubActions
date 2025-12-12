@@ -1,4 +1,4 @@
-name: CICD using maven and SL lab 
+name: CICD using maven and SL lab1 
 on: 
  push: 
    branches: ["main"]
