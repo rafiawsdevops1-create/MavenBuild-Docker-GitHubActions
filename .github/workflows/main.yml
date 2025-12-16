@@ -23,12 +23,12 @@ jobs:
    - name: Loginto Docker Hub
      uses: docker/login-action@v3
      with:
-       username: sonal04
+       username: ${{ secrets.DOCKERHUB_TOKEN }}
        password: ${{ secrets.DOCKERHUB_TOKEN }}
    - name: Build dockerfile and push Image
      uses: docker/build-push-action@v6
      with:
       context: .    # path where dockerfile is- which is curent directory
-      tags: sonal04/myimagejava  # name of the image
+      tags: ravikadapa/githubactions_dockerhub  # name of the image
       push: true
 
