@@ -1,4 +1,4 @@
-name: build java Application
+name: build java Application 1
 on:
   push:
     branches:
